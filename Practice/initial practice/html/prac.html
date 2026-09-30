@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+    <link rel="stylesheet" href="prac.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model and Display Properties</h1>
+        <p>
+            Welcome to my CSS practice page. This page contains
+            paragraphs, headings, lists, and boxes for practicing
+            the box model, sizing, and display properties.
+        </p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#margin">Margin</a></li>
+            <li><a href="#sizing">Sizing</a></li>
+            <li><a href="#display">Display</a></li>
+            <li><a href="#horizontal-menu">Horizontal Menu</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- 1. BOX MODEL -->
+        <section id="box-model">
+            <h2>1. The Four Layers of the Box Model</h2>
+
+            <p class="border-content">
+                Every HTML element is represented as a rectangular
+                box. The box model consists of content, padding,
+                border, and margin. Content contains text or images,
+                padding creates space around the content, the border
+                surrounds the padding, and margin creates space
+                outside the border.
+            </p>
+
+            <p class="border-content">
+                Understanding these four layers helps developers
+                control the spacing and appearance of elements.
+                Try adding padding, borders, and margins to this
+                paragraph to observe how its size and position change.
+            </p>
+        </section>
+
+        <!-- 2. MARGIN COLLAPSING -->
+        <section id="margin">
+            <h2>2. Margin Collapsing</h2>
+
+            <p class="margin-one">
+                This is the first paragraph. It explains how vertical
+                margins work between two block-level elements.
+                Give this paragraph a bottom margin of 40 pixels.
+            </p>
+
+            <p class="margin-two">
+                This is the second paragraph. Give it a top margin
+                of 30 pixels. Observe the gap between the paragraphs
+                and understand why vertical margins sometimes collapse.
+            </p>
+
+            <div class="margin-parent">
+                <p class="child-paragraph">
+                    This paragraph is inside a parent container.
+                    Experiment with the margins of the parent and
+                    child elements to understand their behavior.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. BOX SIZING -->
+        <section id="sizing">
+            <h2>3. Content-Box vs Border-Box</h2>
+
+            <p>
+                The box-sizing property determines how an element's
+                width and height are calculated. With content-box,
+                padding and borders are added to the declared width.
+                With border-box, padding and borders are included
+                within the declared width.
+            </p>
+
+            <div class="size-box content-box">
+                <h3>Content Box</h3>
+                <p>
+                    This box uses content-box sizing.
+                    Its total width includes the content,
+                    padding, and borders.
+                </p>
+            </div>
+
+            <div class="size-box border-box">
+                <h3>Border Box</h3>
+                <p>
+                    This box uses border-box sizing.
+                    Its declared width includes the content,
+                    padding, and borders.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. WIDTH AND HEIGHT -->
+        <section id="dimensions">
+            <h2>4. Width, Height, and Size Constraints</h2>
+
+            <p class="fixed-size">
+                This paragraph has a fixed width and height.
+                Experiment with width and height to see how the
+                content fits inside the element.
+            </p>
+
+            <p class="minimum-size">
+                This paragraph uses minimum width and minimum height.
+                The element can grow when its content requires more
+                space than the minimum dimensions.
+            </p>
+
+            <p class="maximum-size">
+                This paragraph uses maximum width and maximum height.
+                Experiment with max-width and max-height to control
+                the size of the element.
+            </p>
+
+            <p class="responsive-size">
+                This paragraph is designed for responsive sizing.
+                Try percentage widths, viewport units, and maximum
+                width constraints to make it adapt to different
+                screen sizes.
+            </p>
+        </section>
+
+        <!-- 5. DISPLAY PROPERTY -->
+        <section id="display">
+            <h2>5. The Display Property</h2>
+
+            <h3>Block Elements</h3>
+            <p class="block-example">
+                This is a block element. Block elements normally
+                start on a new line and occupy the available width.
+            </p>
+
+            <p class="block-example">
+                This is another block element. Observe how it appears
+                on a separate line from the previous paragraph.
+            </p>
+
+            <h3>Inline Elements</h3>
+            <p>
+                CSS allows you to style
+                <span class="inline-example">this inline element</span>
+                and
+                <span class="inline-example">this second element</span>
+                without forcing them onto separate lines.
+            </p>
+
+            <h3>Inline-Block Elements</h3>
+            <p>
+                You can display these
+                <span class="inline-block-example">First Box</span>
+                <span class="inline-block-example">Second Box</span>
+                <span class="inline-block-example">Third Box</span>
+                next to one another while controlling their dimensions.
+            </p>
+
+            <h3>Display None</h3>
+            <p class="hidden-example">
+                This paragraph is for practicing display: none.
+                Apply the property and observe that the element
+                disappears and its layout space is removed.
+            </p>
+
+            <p>
+                This paragraph comes after the hidden example.
+                Observe its position when the previous paragraph
+                is hidden.
+            </p>
+        </section>
+
+        <!-- 6. HORIZONTAL MENU -->
+        <section id="horizontal-menu">
+            <h2>6. Creating a Horizontal Menu</h2>
+
+            <p>
+                Navigation menus are commonly created using an
+                unordered list. By default, list items are block-level
+                elements and appear vertically. Use CSS display
+                properties to arrange the links horizontally.
+            </p>
+
+            <ul class="horizontal-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <p>
+                Style the menu by removing list markers, adding
+                spacing, changing link colors, and applying a hover
+                effect. Try display: inline-block or flexbox.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            CSS Practice Project — Keep experimenting with different
+            properties until you understand how each one works.
+        </p>
+    </footer>
+
+</body>
+</html>
