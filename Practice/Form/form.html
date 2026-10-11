@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+   <header><h1>Registration Form</h1></header>
+   <main>
+<form action="/register" method = "POST">
+<fieldset>
+    <legend>Personal Information</legend>
+    <p>
+        <label for="username">Username</label>
+        <input type="text" id = "username" placeholder = "Full Name">
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password" id = "password">
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="email" id = "email" placeholder = "abc@gmail.com">
+    </p>
+
+    <p>
+        <label for="role">User Role</label>
+        <select name="role" id="role">
+        <option value="student">Student</option>
+        <option value="instructor">Instructor</option>
+</select>
+    </p>
+    <p>
+         <label for="bio">Biography</label>
+         <textarea name="bio" id="bio" rows = "4" placeholder = "Tell about your self"></textarea>
+
+    </p>
+
+    <p><button><strong>Sign up</strong></button></p>
+</fieldset>
+</form>
+
+
+<p>Already have an account <a href="login.html">Login here</a></p>
+   </main>
+
+   <footer>
+<p>&copy; 2026 Web Technologies</p>
+   </footer>
+</body>
+</html>
