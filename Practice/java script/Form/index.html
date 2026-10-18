@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <header><h1>Welcome back</h1></header>
+    <main>
+<form
+      action="/login"method = "POST">
+      <fieldset>
+        <legend>Take your access</legend>
+        <p>
+        <label for="Name">Name</label>
+        <input type="text" id = "Name" name = "Name">
+</p>
+
+<p>
+        <label for="email">Email</label>
+        <input type="text" id = "email" name = "email">
+</p>
+<p>
+        <label for="password">Password</label>
+        <input type="password" id = "password" name = "password" required minlength = "6">
+</p>
+</fieldset>
+
+</form>
+    </main>
+
+    <footer><p>&copy; 2026 Web Technologies</p></footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
