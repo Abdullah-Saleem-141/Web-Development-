@@ -15,7 +15,7 @@
 - [x] Top navigation bar and yellow ticker banner
 - [x] Hero section with primary CTA
 - [x] Category cards ("Shop by Category")
-- [ ] Brand story / value proposition highlights
+- [x] Brand story / value proposition highlights
 - [ ] Reviews / social proof section
 - [ ] Responsive footer & newsletter form
 
