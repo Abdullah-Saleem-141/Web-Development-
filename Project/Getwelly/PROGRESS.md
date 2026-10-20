@@ -12,7 +12,8 @@
 - [ ] Collect and organize brand assets (logos, tin imagery, icons)
 
 ### Phase 3: Core Layout & Sections
-- [ ] Top announcement bar & responsive navbar
+- [x] Top announcement bar ("Free Shipping on orders over $35")
+- [ ] Responsive navigation bar
 - [ ] Hero section with primary CTA
 - [ ] Category cards / Best seller showcase
 - [ ] Brand story / value proposition highlights
