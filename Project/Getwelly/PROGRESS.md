@@ -16,7 +16,7 @@
 - [x] Hero section with primary CTA
 - [x] Category cards ("Shop by Category")
 - [x] Brand story / value proposition highlights
-- [ ] Reviews / social proof section
+- [x] Reviews / social proof section
 - [ ] Responsive footer & newsletter form
 
 ### Phase 4: Interactivity & Polish

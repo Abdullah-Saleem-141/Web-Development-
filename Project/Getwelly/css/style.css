@@ -317,3 +317,39 @@ body {
     background-color: darkslategrey;
     color: white;
 }
+
+/* Customer Reviews */
+.reviews-section {
+    background-color: white;
+}
+
+.review-card {
+    background-color: antiquewhite;
+    border-radius: 16px;
+    padding: 30px 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.review-stars {
+    color: coral;
+    font-size: 18px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: darkslategrey;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.review-author {
+    font-size: 14px;
+    font-weight: 700;
+    color: darkslategrey;
+    margin-top: auto;
+    letter-spacing: 0.5px;
+}
