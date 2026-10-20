@@ -13,7 +13,7 @@
 
 ### Phase 3: Core Layout & Sections
 - [x] Top announcement bar ("Free Shipping on orders over $35")
-- [ ] Responsive navigation bar
+- [x] Responsive navigation bar
 - [ ] Hero section with primary CTA
 - [ ] Category cards / Best seller showcase
 - [ ] Brand story / value proposition highlights
