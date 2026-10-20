@@ -14,7 +14,7 @@
 ### Phase 3: Core Layout & Sections
 - [x] Top navigation bar and yellow ticker banner
 - [x] Hero section with primary CTA
-- [ ] Category cards / Best seller showcase
+- [x] Category cards ("Shop by Category")
 - [ ] Brand story / value proposition highlights
 - [ ] Reviews / social proof section
 - [ ] Responsive footer & newsletter form
