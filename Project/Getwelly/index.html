@@ -46,8 +46,9 @@
                     <a href="#" class="nav-icon-link ms-3 d-sm-none" title="Search">
                         <i class="bi bi-search"></i>
                     </a>
-                    <a href="#" class="nav-icon-link ms-3" title="Cart">
+                    <a href="#cartDrawer" class="nav-icon-link ms-3 cart-trigger position-relative" data-bs-toggle="offcanvas" role="button" aria-controls="cartDrawer" title="Cart">
                         <i class="bi bi-bag"></i>
+                        <span class="cart-badge" id="cartCountBadge">0</span>
                     </a>
                 </div>
             </div>
@@ -160,6 +161,7 @@
                             <h3 class="product-name">Doggies</h3>
                             <p class="product-desc">Flex Fabric Bandages</p>
                             <span class="product-price">$9.99</span>
+                            <button class="btn btn-add-cart w-100 mt-2" data-name="Doggies" data-price="9.99" data-img="assets/images/prod-doggies.jpg">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -172,6 +174,7 @@
                             <h3 class="product-name">Blemish Patch - 36CT</h3>
                             <p class="product-desc">Hydrocolloid Patches</p>
                             <span class="product-price">$8.99</span>
+                            <button class="btn btn-add-cart w-100 mt-2" data-name="Blemish Patch - 36CT" data-price="8.99" data-img="assets/images/prod-blemish.jpg">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -184,6 +187,7 @@
                             <h3 class="product-name">First Aid Kit 130CT</h3>
                             <p class="product-desc">Large First Aid Kit</p>
                             <span class="product-price">$29.99</span>
+                            <button class="btn btn-add-cart w-100 mt-2" data-name="First Aid Kit 130CT" data-price="29.99" data-img="assets/images/prod-firstaid.jpg">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -196,6 +200,7 @@
                             <h3 class="product-name">Flutter</h3>
                             <p class="product-desc">Flex Fabric Bandages</p>
                             <span class="product-price">$9.99</span>
+                            <button class="btn btn-add-cart w-100 mt-2" data-name="Flutter" data-price="9.99" data-img="assets/images/prod-flutter.jpg">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -349,6 +354,44 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cart Drawer Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="cartDrawerLabel">Your Cart (<span id="cartDrawerCount">0</span>)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- Free Shipping Progress -->
+            <div class="shipping-threshold-box p-3 mb-3 rounded">
+                <p class="small mb-2 fw-semibold" id="shippingStatusText">Add $35.00 more for Free Shipping</p>
+                <div class="progress" style="height: 6px;">
+                    <div class="progress-bar" id="shippingProgressBar" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Cart Items Container -->
+            <div class="cart-items-container flex-grow-1 overflow-auto" id="cartItemsContainer">
+                <div class="empty-cart text-center py-5" id="emptyCartMessage">
+                    <i class="bi bi-bag display-4 text-muted mb-3 d-block"></i>
+                    <p class="fw-bold mb-1">Your cart is empty</p>
+                    <p class="text-muted small mb-4">Add your favorite bandages and kits to get started.</p>
+                    <a href="#popular-products" class="btn btn-shop-now" data-bs-dismiss="offcanvas">Start Shopping</a>
+                </div>
+                <div class="cart-items-list" id="cartItemsList"></div>
+            </div>
+
+            <!-- Cart Drawer Footer -->
+            <div class="cart-drawer-footer border-top pt-3 mt-auto">
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="fw-bold">Subtotal</span>
+                    <span class="fw-bold" id="cartSubtotal">$0.00</span>
+                </div>
+                <p class="small text-muted mb-3">Shipping and taxes calculated at checkout.</p>
+                <button class="btn btn-checkout w-100 py-2 fw-bold" id="checkoutBtn" disabled>Checkout</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

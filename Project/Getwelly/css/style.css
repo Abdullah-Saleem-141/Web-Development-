@@ -479,3 +479,140 @@ body {
 .legal-links a:hover {
     color: coral;
 }
+
+/* Cart Badge & Drawer */
+.cart-trigger {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: coral;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    text-align: center;
+}
+
+.btn-add-cart {
+    background-color: coral;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-add-cart:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.shipping-threshold-box {
+    background-color: antiquewhite;
+    color: darkslategrey;
+}
+
+.progress-bar {
+    background-color: coral;
+    transition: width 0.3s ease;
+}
+
+.cart-item-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    padding: 4px;
+    margin-right: 12px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: darkslategrey;
+    margin-bottom: 2px;
+}
+
+.cart-item-price {
+    font-size: 13px;
+    color: coral;
+    font-weight: 700;
+}
+
+.cart-qty-btn {
+    border: 1px solid lightgray;
+    background-color: white;
+    color: darkslategrey;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    padding: 0;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.cart-qty-num {
+    font-size: 13px;
+    margin: 0 8px;
+    font-weight: 600;
+}
+
+.cart-remove-btn {
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 16px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.cart-remove-btn:hover {
+    color: coral;
+}
+
+.btn-shop-now {
+    background-color: coral;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 8px 24px;
+    border: none;
+}
+
+.btn-shop-now:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.btn-checkout {
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-checkout:not(:disabled):hover {
+    background-color: coral;
+    color: white;
+}

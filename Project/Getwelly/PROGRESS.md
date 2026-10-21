@@ -22,6 +22,6 @@
 
 ### Phase 4: Interactivity & Polish
 - [ ] Mobile navigation toggle & menu animations
-- [ ] Cart drawer / modal preview
+- [x] Cart drawer / modal preview
 - [ ] Cross-browser and responsive testing (Mobile, Tablet, Desktop)
 - [ ] Accessibility audit & final code cleanup
