@@ -14,3 +14,5 @@ let password = inputpassword.value;
 console.log(Name);
 console.log(email);
 console.log(password);
+
+
