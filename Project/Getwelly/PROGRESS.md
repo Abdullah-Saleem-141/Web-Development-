@@ -17,7 +17,8 @@
 - [x] Category cards ("Shop by Category")
 - [x] Brand story / value proposition highlights
 - [x] Reviews / social proof section
-- [ ] Responsive footer & newsletter form
+- [x] Social feed ("Welly in the Wild")
+- [x] Responsive footer & newsletter form
 
 ### Phase 4: Interactivity & Polish
 - [ ] Mobile navigation toggle & menu animations

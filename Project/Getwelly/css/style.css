@@ -389,3 +389,93 @@ body {
 .social-card:hover .social-img {
     transform: scale(1.05);
 }
+
+/* Footer */
+.site-footer {
+    background-color: white;
+    color: darkslategrey;
+}
+
+.footer-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: darkslategrey;
+    margin-bottom: 14px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: darkslategrey;
+    margin-bottom: 16px;
+}
+
+.newsletter-input {
+    border: 1.5px solid darkslategrey;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+.newsletter-btn {
+    background-color: coral;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: coral;
+}
+
+.footer-social-link {
+    color: darkslategrey;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-social-link:hover {
+    color: coral;
+}
+
+.footer-bottom {
+    border-color: lightgray;
+    font-size: 13px;
+}
+
+.copyright-text {
+    color: darkslategrey;
+}
+
+.legal-links a {
+    color: darkslategrey;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+    color: coral;
+}
