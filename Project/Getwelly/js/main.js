@@ -118,5 +118,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Live Product Search Filter
+    const desktopSearch = document.getElementById('desktopSearchInput');
+    const mobileSearch = document.getElementById('mobileSearchInput');
+
+    function filterProducts(query) {
+        const searchTerm = query.toLowerCase().trim();
+        const productCols = document.querySelectorAll('.products-section .col-6');
+
+        productCols.forEach(col => {
+            const name = col.querySelector('.product-name')?.textContent.toLowerCase() || '';
+            const desc = col.querySelector('.product-desc')?.textContent.toLowerCase() || '';
+            if (name.includes(searchTerm) || desc.includes(searchTerm)) {
+                col.style.display = '';
+            } else {
+                col.style.display = 'none';
+            }
+        });
+    }
+
+    if (desktopSearch) {
+        desktopSearch.addEventListener('input', function () {
+            filterProducts(this.value);
+        });
+    }
+
+    if (mobileSearch) {
+        mobileSearch.addEventListener('input', function () {
+            filterProducts(this.value);
+        });
+    }
+
     updateCartUI();
 });

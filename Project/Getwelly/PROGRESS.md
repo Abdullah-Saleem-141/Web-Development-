@@ -21,7 +21,7 @@
 - [x] Responsive footer & newsletter form
 
 ### Phase 4: Interactivity & Polish
-- [ ] Mobile navigation toggle & menu animations
+- [x] Mobile navigation toggle & menu animations
 - [x] Cart drawer / modal preview
 - [ ] Cross-browser and responsive testing (Mobile, Tablet, Desktop)
 - [ ] Accessibility audit & final code cleanup

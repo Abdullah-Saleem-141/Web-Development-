@@ -41,11 +41,8 @@
                 <div class="d-flex align-items-center nav-right">
                     <div class="search-box d-none d-sm-flex align-items-center">
                         <i class="bi bi-search search-icon"></i>
-                        <input type="text" class="search-input" placeholder="SEARCH">
+                        <input type="text" class="search-input" id="desktopSearchInput" placeholder="SEARCH">
                     </div>
-                    <a href="#" class="nav-icon-link ms-3 d-sm-none" title="Search">
-                        <i class="bi bi-search"></i>
-                    </a>
                     <a href="#cartDrawer" class="nav-icon-link ms-3 cart-trigger position-relative" data-bs-toggle="offcanvas" role="button" aria-controls="cartDrawer" title="Cart">
                         <i class="bi bi-bag"></i>
                         <span class="cart-badge" id="cartCountBadge">0</span>
@@ -55,9 +52,22 @@
 
             <!-- Mobile Menu Dropdown -->
             <div class="collapse navbar-collapse d-lg-none px-4 pt-3" id="mobileNav">
+                <div class="search-box mb-3 d-flex align-items-center">
+                    <i class="bi bi-search search-icon"></i>
+                    <input type="text" class="search-input w-100" id="mobileSearchInput" placeholder="SEARCH PRODUCTS">
+                </div>
                 <ul class="navbar-nav">
                     <li class="nav-item mb-2">
                         <a class="nav-link-custom" href="#">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item mb-2 ps-3">
+                        <a class="text-muted small text-decoration-none" href="#">&bull; Bandages &amp; Kits</a>
+                    </li>
+                    <li class="nav-item mb-2 ps-3">
+                        <a class="text-muted small text-decoration-none" href="#">&bull; Hydrocolloid Patches</a>
+                    </li>
+                    <li class="nav-item mb-2 ps-3">
+                        <a class="text-muted small text-decoration-none" href="#">&bull; First Aid Wipes</a>
                     </li>
                     <li class="nav-item mb-2">
                         <a class="nav-link-custom" href="#">WELLY WORLD</a>
