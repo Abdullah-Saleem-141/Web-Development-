@@ -36,3 +36,118 @@ img {
           width: auto;
 }
 
+
+/* logo */
+.header-logo {
+            order: -1;
+            width: 100%;
+            text-align: center;
+}
+
+.header-left {
+            flex: 1;
+            gap: 20px;
+}
+
+.header-right {
+             display: flex;
+             align-items: center;
+             justify-content: flex-end;
+             gap: 16px;
+}
+
+.navbar .nav-link {
+                 padding: 8px 0;
+                 color: var(--text);
+                 font-size: 12px;
+                 letter-spacing: 1px;
+                 text-transform: uppercase;
+}
+
+.navbar .nav-link:hover {
+                       color: var(--coral);
+}
+
+/* Search */
+.search-form {
+            display: flex;
+            align-items: center;
+            width: 113px;
+            border-bottom: 1px solid var(--text);
+            padding-bottom: 2px;
+}
+
+.search-input {
+             width: 80px;
+             border: none;
+             background: transparent;
+             padding: 0 0 0 8px;
+             font-size: 11px;
+             letter-spacing: 2px;
+             text-transform: uppercase;
+}
+
+.search-input::placeholder {
+                          color: #A1A1A0;
+}
+
+/* Cart */
+.cart-link {
+          position: relative;
+          display: inline-block;
+          color: var(--text);
+}
+
+.cart-badge {
+           position: absolute;
+           top: -8px;
+           right: -10px;
+           background-color: var(--coral);
+           color: white;
+           font-size: 11px;
+           font-weight: bold;
+           border-radius: 50%;
+           padding: 2px 6px;
+           text-align: center;
+}
+
+/* Yellow line */
+.ticker-banner {
+              background-color: var(--yellow);
+              color: var(--text);
+              overflow: hidden;
+              padding: 9px 0;
+}
+
+.ticker-track {
+             display: flex;
+}
+
+.ticker-group {
+             display: flex;
+             flex-shrink: 0;
+             animation: scroll-left 30s linear infinite;
+}
+
+.ticker-item {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            padding: 0 35px 0 0;
+}
+
+/* icon squeezing in row */
+.ticker-icons {
+             height: 13px;
+             width: 52px; 
+             max-width: none;
+             flex-shrink: 0;
+             margin-left: 32px;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
