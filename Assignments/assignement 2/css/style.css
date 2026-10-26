@@ -289,3 +289,53 @@ img {
                       transform: scale(1.05);
 }
 
+/* central message */
+.brand-mint-box {
+                background-color: var(--mint);
+                width: 100%;
+               max-width: 800px;
+}
+
+.brand-statement-title {
+                      font-family: Georgia, 'Times New Roman', serif;
+                      font-size: 30px;
+                      color: #333333;
+}
+
+.btn-yellow-pill {
+                background-color: var(--yellow);
+                color: var(--text);
+                border-radius: 25px;
+                 font-size: 13px;
+                font-weight: bold;
+               letter-spacing: 1px;
+}
+
+.btn-yellow-pill:hover {
+                      background-color: var(--yellow);
+                      color: var(--coral);
+}
+
+/* review banner */
+.single-review-banner {
+                     background-color: var(--yellow);
+                     color: #333333;
+}
+
+.review-heading {
+               font-size: 13px;
+               letter-spacing: 1.5px;
+}
+
+.review-stars {
+             font-size: 24px;
+}
+
+.single-review-text {
+                   font-family: Georgia, 'Times New Roman', serif;
+                   font-size: 20px;
+                    line-height: 1.5;
+                   max-width: 700px;
+                   margin: 0 auto 8px auto;
+}
+
