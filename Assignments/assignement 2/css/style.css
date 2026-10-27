@@ -339,3 +339,117 @@ img {
                    margin: 0 auto 8px auto;
 }
 
+/* Footer styling */
+.dark-footer {
+            background-color: var(--charcoal);
+            color: white;
+}
+
+.footer-links a,
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: var(--yellow);
+}
+
+.social-links a {
+  margin-right: 12px;
+}
+
+/* Product page */
+.product-image-box {
+                  background-color: var(--cream);
+                  padding: 24px;
+                   border-radius: 24px;
+                  text-align: center;
+}
+
+.product-price-big {
+                  color: var(--coral);
+                  font-size: 28px;
+                  font-weight: bold;
+}
+
+.qty-input {
+          max-width: 120px;
+          text-align: center;
+}
+
+@media (min-width: 576px) {
+                         .hero-title {
+                           font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+                         .section-title {
+                           font-size: 34px;
+  }
+
+  .brand-statement-title {
+                        font-size: 48px;
+  }
+
+  .hero-title {
+             font-size: 40px;
+             margin-bottom: 14px;
+  }
+
+  .hero-btn {
+           font-size: 14px;
+           padding: 8px 22px;
+  }
+}
+
+@media (min-width: 992px) {
+                         .header-logo {
+                           order: 0;
+                           width: auto;
+  }
+
+  .header-left {
+              flex: 1;
+              padding-left: 30px;
+              gap: 40px;
+  }
+
+  .header-right {
+              flex: 1;
+              padding-right: 30px;
+  }
+
+  .navbar .nav-link {
+                   font-size: 13px;
+  }
+
+  .hero-title {
+             font-size: 54px;
+             margin-bottom: 24px;
+  }
+
+  .hero-btn {
+           font-size: 16px;
+           padding: 12px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+                          .hero-title {
+                            font-size: 68px;
+  }
+}
+
+@media (min-width: 1400px) {
+                          .hero-title {
+                            font-size: 80px;
+  }
+}
+
+
+

@@ -27,13 +27,13 @@
 
      <div class="header-right">
       <form class = "search-form d-none d-md-flex" action = "index.html" method="GET">
-      <i clas = "bi bi-search"></i>
+      <i class= "bi bi-search"></i>
       <label for = "search" class = "visually-hidden"> Search
         </label> 
         <input type="text" id="search" name="q" class="search-input" placeholder="SEARCH">
         </form>
 
-        <a href = " product.html"class = " cart-link " title = " Cart ">
+        <a href = " product.html"class = "cart-link " title = " Cart ">
           <i class = "bi bi-bag fs-5"></i>
           <span class = "cart-badge">0 </span>
         </a>
@@ -57,5 +57,87 @@
         <div class = "ticker-item" ><span>Flex Fabric Bandages That Stay On Through Playtime&trade;</span><img src="assets/icons/wingdings.svg" alt="" class="ticker-icons"></div>
         <div class = " ticker-item "><span>Flex Fabric Bandages That Stay On Through Playtime&trade; </span><img src="assets/icons/wingdings.svg" alt="" class="ticker-icons"></div>
         </div>
-
       </div>
+      </div>
+<main class="container my-5 py-4">
+<div class="row align-items-center g-5">
+
+<!-- Product with info -->
+  <div class="col-12 col-md-6">
+    <div class="product-image-box">
+      <img src="assets/images/prod-doggies.jpg" alt="Doggies Flex Fabric Bandages" class="img-fluid rounded-3">
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <h1 class="display-5 fw-bold mb-2">Doggies</h1>
+    <p class="text-secondary fw-bold mb-3">Flex Fabric Bandages</p>
+    <p class="product-price-big mb-3">$7.99</p>
+     <p class="mb-4">
+       Doggies are flex fabric bandages with playful dog patterns. The fabric bends and moves
+       with you, so they stay on through playtime, and they come in a reusable tin.
+        </p>
+
+<!-- Cart plus quantity -->
+ <form action="product.html" method="GET">
+  <div class="mb-3">
+    <label for="quantity" class="form-label fw-bold small text-uppercase">Quantity</label>
+    <input type="number" id="quantity" name="quantity" class="form-control qty-input" value="1" min="1" max="10">
+  </div>
+<button type="submit" class="btn btn-welly-coral w-100 py-3 mb-4">Add to Cart</button>
+ </form>
+
+ <ul class="text-secondary fw-bold">
+   <li>Flex fabric that moves with you</li>
+   <li>Sealed on all four sides against germs and dirt</li>
+   <li>Stackable, reusable tin</li>
+ </ul>
+  </div>
+  </main>
+  <!-- Footer -->
+  <footer class = "dark-footer py-5" id = "footer">
+    <div class = "container">
+    <div class = "row g-4 mb-4">
+    <div class = "col-6 col-md-4">
+      <ul class = "list-unstyled footer-links text-uppercase fw-bold">
+        <li class = "mb-2"><a href="index.html"> Products </a></li>
+        <li class = "mb-2"><a href="index.html#categories"> Welly World </a></li>
+        <li class = "mb-2"><a href="#"> Press Kit </a></li>
+        
+        <li class = "mb-2"><a href="#footer"> Find Us </a></li>
+         <li class = "mb-2"><a href="#"> Help Center </a></li>
+        <li class = "mb-2"><a href="#"> Careers </a></li>
+        <li class = "mb-2"><a href="#"> Accessibility Settings </a></li>
+      </ul>
+      </div>
+<div class = "col-6 col-md-4">
+  <h3 class = "fs-6 fw-bold text-uppercase mb-2"> Contact Us </h3>
+  <ul class = " list-unstyled footer-links fw-bold">
+    <li class = " mb-2"> <a href="mailto:hello@getwelly.com"> hello@getwelly.com</a></li>
+    <li class= "mb-2"><a href=" tel:8332393559" >1 (833) BE-WELLY</a></li>
+  </ul>
+</div>
+
+<div class = "col-12 col-md-4">
+  <h3 class = "fs-6 fw-bold text-uppercase mb-2">Stay in Touch</h3>
+  <form action  ="index.html" method = "GET" class=" d-flex border-bottom border-light pb-2">
+    <label for = "newsletter-email" class = "visually-hidden"> Email Address </label>
+    <input type = "email" id= " newsletter-email" name = "email" class = "form-control form-control-sm" placeholder="EMAIL ADDRESS" required>
+    <button type = "submit" class = "btn btn-sm btn-warning ms-2"> &rarr; 
+    </button>
+  </form>
+
+  <p class = "social-links mt-3">
+    <a href = "https://www.instagram.com/getwelly/" title = "Welly on Instagram"> Instagram</a>
+    <a href = "https://www.facebook.com/getwelly" title = "Welly on Facebook"> Facebook</a>
+    <a href = "https://www.tiktok.com/@getwelly" title = "Welly on TikTok"> TikTok</a>
+  </p>
+</div>
+      </div>
+      <div class = "pt-4 border-top border-secondary">
+        <p class = "small mb-2"> &copy; 2026 Welly All Rights Reserved</p>
+
+    </div>
+  </footer>
+    
+  </body>
+</html>
