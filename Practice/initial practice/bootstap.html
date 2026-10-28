@@ -68,6 +68,18 @@
             padding: 20px;
             margin: 5px;
         }
+
+        .my-button {
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: red;
+}
+.box {
+    animation: moveBox 2s ease infinite alternate;
+}
     </style>
 </head>
 <body>
@@ -80,6 +92,19 @@
 
 </body>
 </html>
+
+<button class="my-button">Hover over me</button>
+
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
 
 
 </body>
