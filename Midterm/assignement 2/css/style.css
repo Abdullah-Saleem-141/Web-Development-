@@ -6,6 +6,7 @@
      --text: #444441;
      --cream: #FAF5EF;
      --mint: #D1F8F5;
+     --accent: hsl(287, 70%, 45%);
 }
 
 /* base styles */
@@ -449,6 +450,200 @@ img {
                           .hero-title {
                             font-size: 80px;
   }
+}
+
+/* ========================================================
+   Task 1: Mega-menu (Shop by Category)
+   Breakpoint BP = 641px, K = 5 columns
+   Accent: hsl(287, 70%, 45%)
+   ======================================================== */
+
+.mega-toggle {
+    cursor: pointer;
+}
+
+.mega-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-list li {
+    margin-bottom: 6px;
+}
+
+.mega-list a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    transition: color 0.2s;
+}
+
+.mega-list a:hover,
+.mega-list a:focus {
+    color: var(--accent);
+}
+
+/* Below BP (under 641px): Mobile accordion with details/summary */
+@media (max-width: 640.98px) {
+    .d-bp-none {
+        display: inline-block !important;
+    }
+
+    .navbar-toggler {
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        padding: 4px 8px;
+        cursor: pointer;
+    }
+
+    /* Mobile hamburger menu toggle */
+    .navbar-collapse {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #nav-toggle:checked ~ .navbar-collapse {
+        display: block;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    .mega-menu {
+        padding: 6px 0;
+    }
+
+    .mega-container {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .mega-group {
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 4px;
+    }
+
+    /* Accordion summary */
+    .mega-group summary {
+        font-weight: bold;
+        font-size: 13px;
+        color: var(--accent);
+        cursor: pointer;
+        padding: 6px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    .mega-group summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mega-group summary::after {
+        content: "+";
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .mega-group[open] summary::after {
+        content: "−";
+    }
+
+    .mega-list {
+        padding-left: 14px;
+        padding-top: 4px;
+    }
+}
+
+/* From BP (641px) and wider: Desktop full-width mega-panel */
+@media (min-width: 641px) {
+    .d-bp-none {
+        display: none !important;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .header-logo {
+        order: 0;
+        width: auto;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .mega-dropdown {
+        position: static !important;
+    }
+
+    /* Full-width mega menu panel */
+    .mega-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        border-top: 3px solid var(--accent);
+        z-index: 1050;
+        padding: 24px 40px;
+    }
+
+    /* Open on hover OR keyboard tab focus */
+    .mega-dropdown:hover .mega-menu,
+    .mega-dropdown:focus-within .mega-menu {
+        display: block;
+    }
+
+    /* K = 5 columns in CSS grid */
+    .mega-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    /* Show links in static columns on desktop */
+    .mega-group:not([open]) > :not(summary) {
+        display: block !important;
+    }
+
+    .mega-group summary {
+        list-style: none;
+        pointer-events: none;
+        font-weight: bold;
+        font-size: 13px;
+        color: var(--accent);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .mega-group summary::-webkit-details-marker {
+        display: none;
+    }
 }
 
 

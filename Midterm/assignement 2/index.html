@@ -13,34 +13,103 @@
     
 <!-- header -->
   <header class = "sticky-top bg-white">
-  <nav class = "navbar navbar-expand">
+  <nav class = "navbar">
     <div class = "container-fluid flex-wrap px-3 px-lg-5">
-      <ul class = "navbar-nav header-left">
-       <li class = "nav item"> <a class=" nav-link" href="index.html">Products</a></li>
-       <li class ="nav-item" > <a class=" nav-link" href="index.html #categories">Welly World</a></li>
-       <li class = "nav-item"> <a class=" nav-link" href="#footer">Find Us</a></li>
-      </ul>
 
-     <a class = "navbar-brand header-logo" href = "index.html">
-      <img src = "assets/icons/logo.svg" alt = "Welly Logo" class = "site-logo">
-     </a>
+      <!-- Mobile hamburger toggle button (below BP = 641px) -->
+      <input type="checkbox" id="nav-toggle" class="d-none">
+      <label for="nav-toggle" class="navbar-toggler d-bp-none" role="button" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </label>
 
-     <div class="header-right">
-      <form class = "search-form d-none d-md-flex" action = "index.html" method="GET">
-      <i class = "bi bi-search"></i>
-      <label for = "search" class = "visually-hidden"> Search
-        </label> 
-        <input type="text" id="search" name="q" class="search-input" placeholder="SEARCH">
+      <a class = "navbar-brand header-logo" href = "index.html">
+        <img src = "assets/icons/logo.svg" alt = "Welly Logo" class = "site-logo">
+      </a>
+
+      <div class="header-right">
+        <form class = "search-form d-none d-md-flex" action = "index.html" method="GET">
+          <i class = "bi bi-search"></i>
+          <label for = "search" class = "visually-hidden"> Search </label> 
+          <input type="text" id="search" name="q" class="search-input" placeholder="SEARCH">
         </form>
 
-        <a href = " product.html"class = " cart-link " title = " Cart ">
+        <a href = "product.html" class = "cart-link" title = "Cart">
           <i class = "bi bi-bag fs-5"></i>
-          <span class = "cart-badge">0 </span>
+          <span class = "cart-badge">0</span>
         </a>
-     </div>
-        </div>
-     </nav>
-    </header>
+      </div>
+
+      <!-- Collapsible nav links and mega-menu -->
+      <div class="navbar-collapse" id="navbarContent">
+        <ul class = "navbar-nav header-left">
+          <li class = "nav-item"> <a class="nav-link" href="index.html">Products</a></li>
+
+          <!-- Task 1: Mega-menu (Shop by Category) with K=5 columns -->
+          <li class="nav-item mega-dropdown">
+            <a class="nav-link mega-toggle" href="#categories" tabindex="0">Shop by Category <i class="bi bi-chevron-down ms-1" style="font-size: 10px;"></i></a>
+            <div class="mega-menu">
+              <div class="mega-container">
+                <!-- Group 1: Bandages -->
+                <details class="mega-group">
+                  <summary class="mega-heading">Bandages</summary>
+                  <ul class="mega-list">
+                    <li><a href="product.html">Flex Fabric Strips</a></li>
+                    <li><a href="product.html">Waterproof Bandages</a></li>
+                    <li><a href="product.html">Bravery Badges</a></li>
+                    <li><a href="product.html">Finger &amp; Knuckle</a></li>
+                  </ul>
+                </details>
+                <!-- Group 2: First Aid Kits -->
+                <details class="mega-group">
+                  <summary class="mega-heading">First Aid Kits</summary>
+                  <ul class="mega-list">
+                    <li><a href="product.html">Travel Care Pack</a></li>
+                    <li><a href="product.html">Family First Aid Tin</a></li>
+                    <li><a href="product.html">Emergency Kit 130CT</a></li>
+                    <li><a href="product.html">Mini Tin First Aid</a></li>
+                  </ul>
+                </details>
+                <!-- Group 3: Wipes & Sprays -->
+                <details class="mega-group">
+                  <summary class="mega-heading">Wipes &amp; Sprays</summary>
+                  <ul class="mega-list">
+                    <li><a href="product.html">Antiseptic Wipes</a></li>
+                    <li><a href="product.html">Hand Sanitizer Spray</a></li>
+                    <li><a href="product.html">Alcohol Prep Pads</a></li>
+                    <li><a href="product.html">Burn Relief Spray</a></li>
+                  </ul>
+                </details>
+                <!-- Group 4: Face Patches -->
+                <details class="mega-group">
+                  <summary class="mega-heading">Face Patches</summary>
+                  <ul class="mega-list">
+                    <li><a href="product.html">Blemish Patch 36CT</a></li>
+                    <li><a href="product.html">Face Saver Patches</a></li>
+                    <li><a href="product.html">Spot Hydrocolloid</a></li>
+                    <li><a href="product.html">Nose Pore Strips</a></li>
+                  </ul>
+                </details>
+                <!-- Group 5: Accessories -->
+                <details class="mega-group">
+                  <summary class="mega-heading">Accessories</summary>
+                  <ul class="mega-list">
+                    <li><a href="product.html">Storage Tins</a></li>
+                    <li><a href="product.html">Refill Packs</a></li>
+                    <li><a href="product.html">Bravery Stickers</a></li>
+                    <li><a href="product.html">Keychain First Aid</a></li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+          </li>
+
+          <li class ="nav-item"> <a class="nav-link" href="index.html#categories">Welly World</a></li>
+          <li class = "nav-item"> <a class="nav-link" href="#footer">Find Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
     <!-- yellow strip -->
      <div class = "ticker-banner">
@@ -306,6 +375,8 @@
 
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
