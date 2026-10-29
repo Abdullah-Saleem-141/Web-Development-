@@ -763,6 +763,111 @@ img {
     }
 }
 
+/* ========================================================
+   Task 3: Mini-cart Dropdown Panel & Button Limit State
+   ======================================================== */
+
+.header-right {
+    position: relative;
+}
+
+/* Small mini-cart panel under cart icon */
+.mini-cart {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: 280px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 1100;
+    padding: 14px;
+}
+
+.mini-cart.active {
+    display: block;
+}
+
+.mini-cart-header {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.mini-cart-body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.mini-cart-empty {
+    font-size: 13px;
+    color: #888888;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.mini-cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px dashed #f0f0f0;
+    font-size: 13px;
+}
+
+.mini-cart-item-info {
+    flex: 1;
+    padding-right: 8px;
+}
+
+.mini-cart-item-name {
+    font-weight: 600;
+    color: var(--text);
+    display: block;
+    line-height: 1.2;
+}
+
+.mini-cart-item-price {
+    font-size: 12px;
+    color: #666666;
+}
+
+.mini-cart-remove-btn {
+    background-color: transparent;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.mini-cart-remove-btn:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.mini-cart-footer {
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Product button state when limit (N mod 4 + 2 = 3) is reached */
+.btn-limit-reached {
+    opacity: 0.65 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    background-color: #777777 !important;
+    border-color: #777777 !important;
+}
+
+
 
 
 

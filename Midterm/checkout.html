@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Welly WebStore</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <!-- header -->
+  <header class="sticky-top bg-white">
+    <nav class="navbar">
+      <div class="container-fluid flex-wrap px-3 px-lg-5">
+
+        <!-- Mobile hamburger toggle button (below BP = 641px) -->
+        <input type="checkbox" id="nav-toggle" class="d-none">
+        <label for="nav-toggle" class="navbar-toggler d-bp-none" role="button" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </label>
+
+        <a class="navbar-brand header-logo" href="index.html">
+          <img src="assets/icons/logo.svg" alt="Welly Logo" class="site-logo">
+        </a>
+
+        <div class="header-right">
+          <form class="search-form d-none d-md-flex" action="index.html" method="GET">
+            <i class="bi bi-search"></i>
+            <label for="search" class="visually-hidden">Search</label> 
+            <input type="text" id="search" name="q" class="search-input" placeholder="SEARCH">
+          </form>
+
+          <a href="checkout.html" class="cart-link" title="Cart">
+            <i class="bi bi-bag fs-5"></i>
+            <span class="cart-badge">0</span>
+          </a>
+        </div>
+
+        <!-- Collapsible nav links and mega-menu -->
+        <div class="navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav header-left">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Products</a></li>
+
+            <!-- Task 1: Mega-menu (Shop by Category) with K=5 columns -->
+            <li class="nav-item mega-dropdown">
+              <a class="nav-link mega-toggle" href="#categories" tabindex="0">Shop by Category <i class="bi bi-chevron-down ms-1" style="font-size: 10px;"></i></a>
+              <div class="mega-menu">
+                <div class="mega-container">
+                  <!-- Group 1: Bandages -->
+                  <details class="mega-group">
+                    <summary class="mega-heading">Bandages</summary>
+                    <ul class="mega-list">
+                      <li><a href="product.html">Flex Fabric Strips</a></li>
+                      <li><a href="product.html">Waterproof Bandages</a></li>
+                      <li><a href="product.html">Bravery Badges</a></li>
+                      <li><a href="product.html">Finger &amp; Knuckle</a></li>
+                    </ul>
+                  </details>
+                  <!-- Group 2: First Aid Kits -->
+                  <details class="mega-group">
+                    <summary class="mega-heading">First Aid Kits</summary>
+                    <ul class="mega-list">
+                      <li><a href="product.html">Travel Care Pack</a></li>
+                      <li><a href="product.html">Family First Aid Tin</a></li>
+                      <li><a href="product.html">Emergency Kit 130CT</a></li>
+                      <li><a href="product.html">Mini Tin First Aid</a></li>
+                    </ul>
+                  </details>
+                  <!-- Group 3: Wipes & Sprays -->
+                  <details class="mega-group">
+                    <summary class="mega-heading">Wipes &amp; Sprays</summary>
+                    <ul class="mega-list">
+                      <li><a href="product.html">Antiseptic Wipes</a></li>
+                      <li><a href="product.html">Hand Sanitizer Spray</a></li>
+                      <li><a href="product.html">Alcohol Prep Pads</a></li>
+                      <li><a href="product.html">Burn Relief Spray</a></li>
+                    </ul>
+                  </details>
+                  <!-- Group 4: Face Patches -->
+                  <details class="mega-group">
+                    <summary class="mega-heading">Face Patches</summary>
+                    <ul class="mega-list">
+                      <li><a href="product.html">Blemish Patch 36CT</a></li>
+                      <li><a href="product.html">Face Saver Patches</a></li>
+                      <li><a href="product.html">Spot Hydrocolloid</a></li>
+                      <li><a href="product.html">Nose Pore Strips</a></li>
+                    </ul>
+                  </details>
+                  <!-- Group 5: Accessories -->
+                  <details class="mega-group">
+                    <summary class="mega-heading">Accessories</summary>
+                    <ul class="mega-list">
+                      <li><a href="product.html">Storage Tins</a></li>
+                      <li><a href="product.html">Refill Packs</a></li>
+                      <li><a href="product.html">Bravery Stickers</a></li>
+                      <li><a href="product.html">Keychain First Aid</a></li>
+                    </ul>
+                  </details>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item"> <a class="nav-link" href="index.html#categories">Welly World</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#footer">Find Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- yellow strip -->
+  <div class="ticker-banner">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <div class="ticker-item"><span>Secure Checkout &bull; Free Shipping On All Play Packs</span><img src="assets/icons/wingdings.svg" alt="" class="ticker-icons"></div>
+        <div class="ticker-item"><span>Secure Checkout &bull; Free Shipping On All Play Packs</span><img src="assets/icons/wingdings.svg" alt="" class="ticker-icons"></div>
+        <div class="ticker-item"><span>Secure Checkout &bull; Free Shipping On All Play Packs</span><img src="assets/icons/wingdings.svg" alt="" class="ticker-icons"></div>
+        <div class="ticker-item"><span>Secure Checkout &bull; Free Shipping On All Play Packs</span><img src="assets/icons/wingdings.svg" alt="" class="ticker-icons"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 2: Checkout Form Section -->
+  <main class="container my-5 py-4 checkout-page">
+    <h1 class="section-title text-center mb-3">Order Checkout</h1>
+    <p class="text-center text-secondary mb-5">Please provide your details below to complete your Welly order.</p>
+
+    <form class="checkout-form" action="#" method="POST" novalidate="false">
+      <div class="checkout-grid">
+
+        <!-- Fieldset 1: Contact -->
+        <fieldset class="checkout-fieldset">
+          <legend class="checkout-legend">Contact</legend>
+
+          <!-- Full name -->
+          <div class="form-row">
+            <label for="fullname" class="form-label">Full Name</label>
+            <div class="input-wrapper">
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="e.g. Abdullah Saleem" required>
+              <span class="error-message">Please enter your full name.</span>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-row">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-wrapper">
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. user@example.com" required>
+              <span class="error-message">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <!-- Phone (03XX-XXXXXXX) -->
+          <div class="form-row">
+            <label for="phone" class="form-label">Phone</label>
+            <div class="input-wrapper">
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="0300-1234567" pattern="03[0-9]{2}-[0-9]{7}" required>
+              <span class="error-message">Format must be 03XX-XXXXXXX (e.g. 0300-1234567).</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Fieldset 2: Delivery -->
+        <fieldset class="checkout-fieldset">
+          <legend class="checkout-legend">Delivery</legend>
+
+          <!-- Address -->
+          <div class="form-row">
+            <label for="address" class="form-label">Address</label>
+            <div class="input-wrapper">
+              <input type="text" id="address" name="address" class="form-input" placeholder="Street address or apartment" required>
+              <span class="error-message">Please enter your delivery address.</span>
+            </div>
+          </div>
+
+          <!-- City select -->
+          <div class="form-row">
+            <label for="city" class="form-label">City</label>
+            <div class="input-wrapper">
+              <select id="city" name="city" class="form-input" required>
+                <option value="">Select a city</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Multan">Multan</option>
+              </select>
+              <span class="error-message">Please select a delivery city.</span>
+            </div>
+          </div>
+
+          <!-- Delivery Date: min 2026-10-29 to max 2026-12-09 (today + 41 days) -->
+          <div class="form-row">
+            <label for="delivery-date" class="form-label">Delivery Date</label>
+            <div class="input-wrapper">
+              <input type="date" id="delivery-date" name="delivery-date" class="form-input" min="2026-10-29" max="2026-12-09" required>
+              <span class="error-message">Date must be between 2026-10-29 and 2026-12-09.</span>
+            </div>
+          </div>
+        </fieldset>
+
+      </div>
+
+      <!-- Submit button full width at every size -->
+      <button type="submit" class="btn btn-welly-coral checkout-btn">Complete Purchase</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="dark-footer py-5" id="footer">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-4">
+          <ul class="list-unstyled footer-links text-uppercase fw-bold">
+            <li class="mb-2"><a href="index.html">Products</a></li>
+            <li class="mb-2"><a href="index.html#categories">Welly World</a></li>
+            <li class="mb-2"><a href="#">Press Kit</a></li>
+            <li class="mb-2"><a href="#footer">Find Us</a></li>
+            <li class="mb-2"><a href="#">Help Center</a></li>
+            <li class="mb-2"><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h3 class="fs-6 fw-bold text-uppercase mb-2">Contact Us</h3>
+          <ul class="list-unstyled footer-links fw-bold">
+            <li class="mb-2"><a href="mailto:hello@getwelly.com">hello@getwelly.com</a></li>
+            <li class="mb-2"><a href="tel:8332393559">1 (833) BE-WELLY</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="fs-6 fw-bold text-uppercase mb-2">Stay in Touch</h3>
+          <form action="index.html" method="GET" class="d-flex border-bottom border-light pb-2">
+            <label for="newsletter-email" class="visually-hidden">Email Address</label>
+            <input type="email" id="newsletter-email" name="email" class="form-control form-control-sm" placeholder="EMAIL ADDRESS" required>
+            <button type="submit" class="btn btn-sm btn-warning ms-2">&rarr;</button>
+          </form>
+          <p class="social-links mt-3">
+            <a href="https://www.instagram.com/getwelly/" title="Welly on Instagram">Instagram</a>
+            <a href="https://www.facebook.com/getwelly" title="Welly on Facebook">Facebook</a>
+            <a href="https://www.tiktok.com/@getwelly" title="Welly on TikTok">TikTok</a>
+          </p>
+        </div>
+      </div>
+      <div class="pt-4 border-top border-secondary">
+        <p class="small mb-2">&copy; 2026 Welly All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

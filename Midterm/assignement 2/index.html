@@ -26,17 +26,34 @@
         <img src = "assets/icons/logo.svg" alt = "Welly Logo" class = "site-logo">
       </a>
 
-      <div class="header-right">
+      <div class="header-right position-relative">
         <form class = "search-form d-none d-md-flex" action = "index.html" method="GET">
           <i class = "bi bi-search"></i>
           <label for = "search" class = "visually-hidden"> Search </label> 
           <input type="text" id="search" name="q" class="search-input" placeholder="SEARCH">
         </form>
 
-        <a href = "checkout.html" class = "cart-link" title = "Cart">
+        <a href = "checkout.html" class = "cart-link" id="cartToggle" title = "Cart">
           <i class = "bi bi-bag fs-5"></i>
-          <span class = "cart-badge">0</span>
+          <span class = "cart-badge" id="cartBadge">0</span>
         </a>
+
+        <!-- Task 3: Mini-cart dropdown panel -->
+        <div class="mini-cart" id="miniCart">
+          <div class="mini-cart-header">
+            <h6 class="mb-0 fw-bold">Your Cart</h6>
+          </div>
+          <div class="mini-cart-body" id="miniCartItems">
+            <p class="mini-cart-empty">Your cart is empty.</p>
+          </div>
+          <div class="mini-cart-footer">
+            <div class="d-flex justify-content-between fw-bold mb-2">
+              <span>Total:</span>
+              <span id="miniCartTotal">$0.00</span>
+            </div>
+            <a href="checkout.html" class="btn btn-welly-coral w-100 btn-sm">Checkout</a>
+          </div>
+        </div>
       </div>
 
       <!-- Collapsible nav links and mega-menu -->
@@ -377,6 +394,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
